@@ -182,7 +182,7 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
   align-items: center;
 }
 
-.header h1 {
+.header .header__left .header__left-content h1 {
   font-family: var(--title-font-family);
   font-size: 4rem;
   font-weight: 700;
@@ -195,21 +195,17 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
   line-height: 30px;
 }
 
-.header .header__left-cta .header__left-cta-item {
-  display: inline-flex;
+.header .header__left-cta {
+  display: flex;
+  gap: 8px;
 }
 
-.header .header__left-cta .header__left-cta-item a {
-  background-color: var(--primary-color);
-}
-
-.header .header__left-cta .header__left-cta-item:last-child {
-  background-color: var(--secondary-color);
-}
-
-.header a {
-  padding: 12px 24px;
+.header .header__left-cta-item {
   border: solid;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: var(--primary-color);
 }
 
 .header__right img {
