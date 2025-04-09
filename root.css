@@ -7,7 +7,8 @@
   --secondary-color: #62748e;
   --tertiary-color: #1d293d;
   --inverse-color: #ebe6e7;
-  --light-color: #f1f5f9;
+  --text-light-color: #90a1b9;
+  --title-light-color: #f1f5f9;
 
   /* Font */
   --text-font-family: "Inter", sans-serif;
