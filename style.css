@@ -42,8 +42,8 @@ p.light {
   color: var(--text-light-color); /*   --text-light-color: #90a1b9; */
 }
 
-*.less-light {
-  color: #f3f4f5;
+.less-light {
+  color: #cad5e2;
 }
 
 a {
@@ -53,6 +53,21 @@ a {
 
 a:hover {
   color: var(--primary-color); /*  --primary-color: #2174ea; */
+}
+
+a.a-arrow-r {
+  position: relative;
+}
+
+a.a-arrow .arrow-r {
+  color: var(--primary-color);
+  position: relative;
+  transition: all ease-in-out 0.15s;
+  left: calc(100%+3px);
+}
+
+a:hover .arrow-r {
+  margin-left: 2px;
 }
 
 /*  -Utility per associare il display flex in maniera specifica a un elemento */
@@ -80,14 +95,40 @@ a:hover {
   position: relative;
 }
 
+.dropdown a svg {
+  width: 12px;
+  height: 12px;
+  fill: var(--text-light-color);
+}
+
 .dropdown .dropdown__body {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -5px;
   position: absolute;
   background-color: white;
   border-radius: 4px;
   padding: 0.5rem 1rem;
+  top: calc(100%+0.5rem);
+  right: 0;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  transition: all ease-in-out 0.25s;
 }
 
+.dropdown:hover .dropdown__body {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
 
+.dropdown .dropdown__body .dropdown__body-item a {
+  display: block;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
 
 /*  --------------------------------------END DROPDOWN----------------------------------------------- */
 
@@ -114,10 +155,18 @@ nav .nav__menu {
   align-items: center;
 }
 
+nav .nav__menu nav .nav__menu-item a {
+  padding: 0.5rem 0;
+}
+
 nav .nav__actions {
   display: flex;
   gap: 36px;
   align-items: center;
+}
+
+nav .nav__actions .nav__actions-item:last-child a:hover {
+  color: white;
 }
 
 /*  -----------------------------------END NAVBAR----------------------------------------------- */
