@@ -1,0 +1,10 @@
+:root {
+  /* Sizes */
+  --container-max-w: 1152px;
+  --global-font-size:16px;
+  /* Colors */
+  --primary-color: #2174ea;
+  --secondary-color: #62748e;
+  --tertiary-color: #1d293d;
+  --inverse-color: #ebe6e7;
+}
