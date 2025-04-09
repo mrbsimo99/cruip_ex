@@ -171,3 +171,50 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
 }
 
 /*  -----------------------------------END NAVBAR----------------------------------------------- */
+
+/*  -----------------------------------HEADER---------------------------------------------- */
+.wrapper {
+  background-color: var(--tertiary-color);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: var(--title-font-family);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 74px;
+}
+
+.header p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.header .header__left-cta .header__left-cta-item {
+  display: inline-flex;
+}
+
+.header .header__left-cta .header__left-cta-item a {
+  background-color: var(--primary-color);
+}
+
+.header .header__left-cta .header__left-cta-item:last-child {
+  background-color: var(--secondary-color);
+}
+
+.header a {
+  padding: 12px 24px;
+  border: solid;
+}
+
+.header__right img {
+  width: 540px;
+  height: 405px;
+}
+
+/*  -----------------------------------END HEADER---------------------------------------------- */
