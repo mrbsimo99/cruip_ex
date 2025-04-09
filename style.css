@@ -74,6 +74,23 @@ a:hover {
   max-width: var(--container-max-w); /* --container-max-w: 1152px; */
 }
 
+/*  --------------------------------------DROPDOWN----------------------------------------------- */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown__body {
+  position: absolute;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+
+
+/*  --------------------------------------END DROPDOWN----------------------------------------------- */
+
 /*  --------------------------------------NAVBAR----------------------------------------------- */
 nav {
   background-color: var(--tertiary-color);
