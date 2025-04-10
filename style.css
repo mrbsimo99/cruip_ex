@@ -212,8 +212,21 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
   padding: 12px 24px;
 }
 
+.header .header__left-cta-item:hover {
+  background-color: #1b63c7;
+  cursor: pointer;
+}
+
+.header .header__left-cta-item {
+  width: 175px;
+}
+
 .header .header__left-cta-item:last-child {
-  background-color: #314158;
+  background-color: #31415a;
+}
+
+.header .header__left-cta-item:last-child:hover {
+  background-color: #28354a;
 }
 
 .header .header__left-cta-item a {
@@ -226,13 +239,9 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
 .header .arrow-r {
   color: #8ec5ff;
   position: absolute;
-  transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.1s;
   left: calc(100%+1px);
   margin-left: 1.5px;
-}
-
-.header .arrow-r {
-  margin-left: 3px;
 }
 
 .header .header__right {
