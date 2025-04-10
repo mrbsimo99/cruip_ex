@@ -175,6 +175,7 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
 /*  -----------------------------------HEADER---------------------------------------------- */
 .wrapper {
   background-color: var(--tertiary-color);
+  z-index: -10;
 }
 
 .header .header__left .header__left-content h1 {
@@ -240,14 +241,22 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
   color: #8ec5ff;
   position: absolute;
   transition: all ease-in-out 0.1s;
-  left: calc(100%+1px);
-  margin-left: 1.5px;
 }
 
 .header .header__right {
+  position: relative;
+}
+
+.header .header__right .square {
+  width: 540px;
+  height: 405px;
+  position: absolute;
   border: solid;
   border-width: 2px;
   border-color: var(--secondary-color);
+  top: 20px;
+  left: 20px;
+  z-index: -10;
 }
 
 .header .header__right img {
