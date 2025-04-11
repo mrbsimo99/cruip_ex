@@ -1,5 +1,5 @@
 @import url(./root.css);
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 /* Reset */
 * {
@@ -23,6 +23,7 @@ h4,
 h5 {
   color: var(--tertiary-color); /*  --tertiary-color: #1d293d; */
   font-family: var(--title-font-family);
+  -webkit-font-smoothing: antialiased;
 }
 
 h1.light,
@@ -31,6 +32,7 @@ h3.light,
 h4.light,
 h5.light {
   color: var(--title-light-color); /*  --light-color: #f1f5f9 */
+  -webkit-font-smoothing: antialiased;
 }
 
 a.light,
@@ -175,7 +177,6 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
 /*  -----------------------------------HEADER---------------------------------------------- */
 .wrapper {
   background-color: var(--tertiary-color);
-  z-index: -10;
 }
 
 .header .header__left .header__left-content h1 {
@@ -223,6 +224,10 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
 }
 
 .header .header__left-cta-item:last-child {
+  width: 169.4px;
+}
+
+.header .header__left-cta-item:last-child {
   background-color: #31415a;
 }
 
@@ -232,7 +237,7 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
 
 .header .header__left-cta-item a {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 250px;
   line-height: 22px;
   color: #fff;
 }
@@ -241,22 +246,12 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
   color: #8ec5ff;
   position: absolute;
   transition: all ease-in-out 0.1s;
+  left: calc(100%+3px);
+  margin-left: 4px;
 }
 
 .header .header__right {
   position: relative;
-}
-
-.header .header__right .square {
-  width: 540px;
-  height: 405px;
-  position: absolute;
-  border: solid;
-  border-width: 2px;
-  border-color: var(--secondary-color);
-  top: 20px;
-  left: 20px;
-  z-index: -10;
 }
 
 .header .header__right img {
