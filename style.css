@@ -112,7 +112,7 @@ a:hover .arrow-r {
   background-color: white;
   border-radius: 4px;
   padding: 0.5rem 1rem;
-  top: calc(100%+0.5rem);
+  top: calc(100%+ 0.5rem);
   right: 0;
   width: 150px;
   display: flex;
@@ -198,7 +198,7 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
   display: flex;
   width: 480px;
   height: 48px;
-  gap: 8px;
+  gap: 1rem;
 }
 
 .header .header__left-cta {
@@ -206,12 +206,25 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
 }
 
 .header .header__left-cta-item {
+  position: relative;
   border: solid;
   border-radius: 0.125rem;
   border-width: 1px;
   border-color: transparent;
   background-color: var(--primary-color);
   padding: 12px 24px;
+  width: 175px;
+}
+
+.arrow-r {
+  position: absolute;
+  color: #8ec5ff;
+  transition: all ease-in-out 0.1s;
+  margin-left: 2px;
+}
+
+.header .header__left-cta-item:hover .arrow-r {
+  transform: translateX(5px);
 }
 
 .header .header__left-cta-item:hover {
@@ -219,8 +232,8 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
   cursor: pointer;
 }
 
-.header .header__left-cta-item {
-  width: 175px;
+.header .header__left-cta-item a {
+  pointer-events: none;
 }
 
 .header .header__left-cta-item:last-child {
@@ -237,17 +250,9 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
 
 .header .header__left-cta-item a {
   font-size: 1rem;
-  font-weight: 250px;
+  font-weight: 350;
   line-height: 22px;
   color: #fff;
-}
-
-.header .arrow-r {
-  color: #8ec5ff;
-  position: absolute;
-  transition: all ease-in-out 0.1s;
-  left: calc(100%+3px);
-  margin-left: 4px;
 }
 
 .header .header__right {
