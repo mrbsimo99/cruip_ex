@@ -288,3 +288,109 @@ nav .nav__actions .nav__actions-item:last-child a:hover {
 }
 
 /*  -----------------------------------END HEADER---------------------------------------------- */
+
+/*  -----------------------------------MAIN---------------------------------------------- */
+
+/*  -----------------------------------SECTION1---------------------------------------------- */
+
+#bright {
+  background-color: white;
+}
+
+.section1_container {
+  max-width: var(--container-max-w);
+  padding: 80px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.section1_container .card {
+  margin: 0 24px;
+  width: 304px;
+  height: 203px;
+}
+
+.section1_container .card .card-icon {
+  margin: 0 0 16px;
+}
+
+.section1_container .card .card-content h3 {
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.section1_container .card .card-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.card-icon {
+  width: 64px;
+  fill: var(--primary-color);
+}
+
+/*  -----------------------------------END SECTION1---------------------------------------------- */
+
+/*  ----------------------------------- SECTION2---------------------------------------------- */
+
+.wrapper_light {
+  display: flex;
+  background: linear-gradient(to bottom, #f1f5f9 68%, #ffffff 28%);
+  justify-content: center;
+}
+
+.section2_container {
+  width: 1104px;
+  height: 984px;
+  padding: 80px 0px;
+}
+
+.section2__top {
+  width: 768px;
+  margin: 0px 168px;
+  padding: 0 0 48px;
+  text-align: center;
+}
+
+.section2__top h2 {
+  margin: 0 0 16px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+.section2__top p {
+  margin: 0px 4px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.section2__center {
+  padding: 0px 0px 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.section2__center svg {
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.section2__bottom {
+  text-align: center;
+}
+
+.section2__bottom-img img {
+  width: 768px;
+  height: auto;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
